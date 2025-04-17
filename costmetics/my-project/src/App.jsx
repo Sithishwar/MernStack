@@ -6,17 +6,23 @@ import Page1 from "./pages/Page1";
 import Aboutus from "./pages/Aboutus";
 import Faq from "./pages/Faq";
 import TAC from "./pages/TAC";
+import Cart from "./pages/Cart";
+import PrivacyPolicy from './pages/home/Privacy';
+import Accessibility from './pages/home/Accessibility';  // Add this import
 
 function App() {
   return (
     <>
-      <Navbar /> 
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Page1/>} />
-        <Route path="/About" element={<Aboutus/>} />
-        <Route path="/Offer" element={<Offer/>} />
-        <Route path="/Faq" element={<Faq/>} />
-        <Route path="/TAC" element ={<TAC/>}/>
+        <Route path="/" element={<Page1 />} />
+        <Route path="/about" element={<Aboutus />} />
+        <Route path="/offer" element={<Offer />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/terms" element={<TAC />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/accessibility" element={<Accessibility />} />  {/* Add this route */}
       </Routes>
     </>
   );
