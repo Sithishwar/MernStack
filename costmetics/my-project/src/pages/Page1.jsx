@@ -113,7 +113,7 @@ function Page1() {
           <div className={styles.footerColumn}>
             <h3>Help</h3>
             <ul>
-              <li>FAQs</li>
+              <li><Link to="/faq" className={styles.footerLink}>FAQs</Link></li>
               <li>Shipping Info</li>
               <li>Returns</li>
               <li>Order Tracking</li>
@@ -123,11 +123,11 @@ function Page1() {
           <div className={styles.footerColumn}>
             <h3>About</h3>
             <ul>
-              <li>Our Story</li>
-              <li>Careers</li>
-              <li>Press</li>
-              <li>Blog</li>
-              <li>Sustainability</li>
+              <li><Link to="/our-story" className={styles.footerLink}>Our Story</Link></li>
+              <li><Link to="/careers" className={styles.footerLink}>Careers</Link></li>
+              <li><Link to="/press" className={styles.footerLink}>Press</Link></li>
+              <li><Link to="/blog" className={styles.footerLink}>Blog</Link></li>
+              <li><Link to="/sustainability" className={styles.footerLink}>Sustainability</Link></li>
             </ul>
           </div>
           <div className={styles.footerColumn}>
